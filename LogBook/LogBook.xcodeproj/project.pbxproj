@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC4FF7B82029A7D20037B141 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4FF7AD2029A73F0037B141 /* SQLite.framework */; };
+		AC4FF7B92029A7D20037B141 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC4FF7AD2029A73F0037B141 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC4FF7C2202A29230037B141 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4FF7C0202A29230037B141 /* InputViewController.swift */; };
+		AC545662209A3E2400C7E6C8 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC545661209A3E2400C7E6C8 /* UpdateViewController.swift */; };
+		AC548376204E5FB0001450A3 /* LogData.db in Resources */ = {isa = PBXBuildFile; fileRef = AC548375204E5FB0001450A3 /* LogData.db */; };
+		C450CE8A1FCB820D0030ED74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450CE891FCB820D0030ED74 /* AppDelegate.swift */; };
+		C450CE8C1FCB820D0030ED74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450CE8B1FCB820D0030ED74 /* ViewController.swift */; };
+		C450CE8F1FCB820D0030ED74 /* LogBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C450CE8D1FCB820D0030ED74 /* LogBook.xcdatamodeld */; };
+		C450CE911FCB820D0030ED74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C450CE901FCB820D0030ED74 /* Assets.xcassets */; };
+		C450CE941FCB820D0030ED74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450CE921FCB820D0030ED74 /* Main.storyboard */; };
+		C450CEA01FCB820D0030ED74 /* LogBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450CE9F1FCB820D0030ED74 /* LogBookTests.swift */; };
+		C450CEAB1FCB820D0030ED74 /* LogBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450CEAA1FCB820D0030ED74 /* LogBookUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC4FF7A82029A73F0037B141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		AC4FF7AA2029A73F0037B141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		AC4FF7AC2029A73F0037B141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		AC4FF7AE2029A73F0037B141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		AC4FF7B02029A73F0037B141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		AC4FF7B22029A73F0037B141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		AC4FF7B42029A73F0037B141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		AC4FF7BA2029A7D20037B141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247B3B1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		C450CE9C1FCB820D0030ED74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C450CE7E1FCB820C0030ED74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C450CE851FCB820D0030ED74;
+			remoteInfo = LogBook;
+		};
+		C450CEA71FCB820D0030ED74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C450CE7E1FCB820C0030ED74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C450CE851FCB820D0030ED74;
+			remoteInfo = LogBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC4FF7BC2029A7D40037B141 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC4FF7B92029A7D20037B141 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		AC4FF7C0202A29230037B141 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		AC545661209A3E2400C7E6C8 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		AC548375204E5FB0001450A3 /* LogData.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = LogData.db; sourceTree = "<group>"; };
+		C450CE861FCB820D0030ED74 /* LogBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C450CE891FCB820D0030ED74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C450CE8B1FCB820D0030ED74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C450CE8E1FCB820D0030ED74 /* LogBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LogBook.xcdatamodel; sourceTree = "<group>"; };
+		C450CE901FCB820D0030ED74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C450CE931FCB820D0030ED74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C450CE951FCB820D0030ED74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C450CE961FCB820D0030ED74 /* LogBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogBook.entitlements; sourceTree = "<group>"; };
+		C450CE9B1FCB820D0030ED74 /* LogBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C450CE9F1FCB820D0030ED74 /* LogBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBookTests.swift; sourceTree = "<group>"; };
+		C450CEA11FCB820D0030ED74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C450CEA61FCB820D0030ED74 /* LogBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C450CEAA1FCB820D0030ED74 /* LogBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBookUITests.swift; sourceTree = "<group>"; };
+		C450CEAC1FCB820D0030ED74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C450CE831FCB820D0030ED74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4FF7B82029A7D20037B141 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C450CE981FCB820D0030ED74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C450CEA31FCB820D0030ED74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC4FF79F2029A73B0037B141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC4FF7A92029A73F0037B141 /* SQLite.framework */,
+				AC4FF7AB2029A73F0037B141 /* SQLiteTests iOS.xctest */,
+				AC4FF7AD2029A73F0037B141 /* SQLite.framework */,
+				AC4FF7AF2029A73F0037B141 /* SQLiteTests Mac.xctest */,
+				AC4FF7B12029A73F0037B141 /* SQLite.framework */,
+				AC4FF7B32029A73F0037B141 /* SQLiteTests tvOS.xctest */,
+				AC4FF7B52029A73F0037B141 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC4FF7B62029A7A20037B141 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C450CE7D1FCB820C0030ED74 = {
+			isa = PBXGroup;
+			children = (
+				C450CE881FCB820D0030ED74 /* LogBook */,
+				C450CE9E1FCB820D0030ED74 /* LogBookTests */,
+				C450CEA91FCB820D0030ED74 /* LogBookUITests */,
+				C450CE871FCB820D0030ED74 /* Products */,
+				AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */,
+				AC4FF7B62029A7A20037B141 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C450CE871FCB820D0030ED74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C450CE861FCB820D0030ED74 /* LogBook.app */,
+				C450CE9B1FCB820D0030ED74 /* LogBookTests.xctest */,
+				C450CEA61FCB820D0030ED74 /* LogBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C450CE881FCB820D0030ED74 /* LogBook */ = {
+			isa = PBXGroup;
+			children = (
+				AC548375204E5FB0001450A3 /* LogData.db */,
+				C450CE891FCB820D0030ED74 /* AppDelegate.swift */,
+				C450CE8B1FCB820D0030ED74 /* ViewController.swift */,
+				AC4FF7C0202A29230037B141 /* InputViewController.swift */,
+				AC545661209A3E2400C7E6C8 /* UpdateViewController.swift */,
+				C450CE901FCB820D0030ED74 /* Assets.xcassets */,
+				C450CE921FCB820D0030ED74 /* Main.storyboard */,
+				C450CE951FCB820D0030ED74 /* Info.plist */,
+				C450CE961FCB820D0030ED74 /* LogBook.entitlements */,
+				C450CE8D1FCB820D0030ED74 /* LogBook.xcdatamodeld */,
+			);
+			path = LogBook;
+			sourceTree = "<group>";
+		};
+		C450CE9E1FCB820D0030ED74 /* LogBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				C450CE9F1FCB820D0030ED74 /* LogBookTests.swift */,
+				C450CEA11FCB820D0030ED74 /* Info.plist */,
+			);
+			path = LogBookTests;
+			sourceTree = "<group>";
+		};
+		C450CEA91FCB820D0030ED74 /* LogBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C450CEAA1FCB820D0030ED74 /* LogBookUITests.swift */,
+				C450CEAC1FCB820D0030ED74 /* Info.plist */,
+			);
+			path = LogBookUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C450CE851FCB820D0030ED74 /* LogBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C450CEAF1FCB820D0030ED74 /* Build configuration list for PBXNativeTarget "LogBook" */;
+			buildPhases = (
+				C450CE821FCB820D0030ED74 /* Sources */,
+				C450CE831FCB820D0030ED74 /* Frameworks */,
+				C450CE841FCB820D0030ED74 /* Resources */,
+				AC4FF7BC2029A7D40037B141 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC4FF7BB2029A7D20037B141 /* PBXTargetDependency */,
+			);
+			name = LogBook;
+			productName = LogBook;
+			productReference = C450CE861FCB820D0030ED74 /* LogBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C450CE9A1FCB820D0030ED74 /* LogBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C450CEB21FCB820D0030ED74 /* Build configuration list for PBXNativeTarget "LogBookTests" */;
+			buildPhases = (
+				C450CE971FCB820D0030ED74 /* Sources */,
+				C450CE981FCB820D0030ED74 /* Frameworks */,
+				C450CE991FCB820D0030ED74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C450CE9D1FCB820D0030ED74 /* PBXTargetDependency */,
+			);
+			name = LogBookTests;
+			productName = LogBookTests;
+			productReference = C450CE9B1FCB820D0030ED74 /* LogBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C450CEA51FCB820D0030ED74 /* LogBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C450CEB51FCB820D0030ED74 /* Build configuration list for PBXNativeTarget "LogBookUITests" */;
+			buildPhases = (
+				C450CEA21FCB820D0030ED74 /* Sources */,
+				C450CEA31FCB820D0030ED74 /* Frameworks */,
+				C450CEA41FCB820D0030ED74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C450CEA81FCB820D0030ED74 /* PBXTargetDependency */,
+			);
+			name = LogBookUITests;
+			productName = LogBookUITests;
+			productReference = C450CEA61FCB820D0030ED74 /* LogBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C450CE7E1FCB820C0030ED74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "David Barnes";
+				TargetAttributes = {
+					C450CE851FCB820D0030ED74 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					C450CE9A1FCB820D0030ED74 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C450CE851FCB820D0030ED74;
+					};
+					C450CEA51FCB820D0030ED74 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C450CE851FCB820D0030ED74;
+					};
+				};
+			};
+			buildConfigurationList = C450CE811FCB820C0030ED74 /* Build configuration list for PBXProject "LogBook" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C450CE7D1FCB820C0030ED74;
+			productRefGroup = C450CE871FCB820D0030ED74 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AC4FF79F2029A73B0037B141 /* Products */;
+					ProjectRef = AC4FF79E2029A73B0037B141 /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C450CE851FCB820D0030ED74 /* LogBook */,
+				C450CE9A1FCB820D0030ED74 /* LogBookTests */,
+				C450CEA51FCB820D0030ED74 /* LogBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AC4FF7A92029A73F0037B141 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AC4FF7A82029A73F0037B141 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC4FF7AB2029A73F0037B141 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = AC4FF7AA2029A73F0037B141 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC4FF7AD2029A73F0037B141 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AC4FF7AC2029A73F0037B141 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC4FF7AF2029A73F0037B141 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = AC4FF7AE2029A73F0037B141 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC4FF7B12029A73F0037B141 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AC4FF7B02029A73F0037B141 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC4FF7B32029A73F0037B141 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = AC4FF7B22029A73F0037B141 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC4FF7B52029A73F0037B141 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AC4FF7B42029A73F0037B141 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C450CE841FCB820D0030ED74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C450CE911FCB820D0030ED74 /* Assets.xcassets in Resources */,
+				AC548376204E5FB0001450A3 /* LogData.db in Resources */,
+				C450CE941FCB820D0030ED74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C450CE991FCB820D0030ED74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C450CEA41FCB820D0030ED74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C450CE821FCB820D0030ED74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C450CE8F1FCB820D0030ED74 /* LogBook.xcdatamodeld in Sources */,
+				C450CE8C1FCB820D0030ED74 /* ViewController.swift in Sources */,
+				C450CE8A1FCB820D0030ED74 /* AppDelegate.swift in Sources */,
+				AC4FF7C2202A29230037B141 /* InputViewController.swift in Sources */,
+				AC545662209A3E2400C7E6C8 /* UpdateViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C450CE971FCB820D0030ED74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C450CEA01FCB820D0030ED74 /* LogBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C450CEA21FCB820D0030ED74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C450CEAB1FCB820D0030ED74 /* LogBookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC4FF7BB2029A7D20037B141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite Mac";
+			targetProxy = AC4FF7BA2029A7D20037B141 /* PBXContainerItemProxy */;
+		};
+		C450CE9D1FCB820D0030ED74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C450CE851FCB820D0030ED74 /* LogBook */;
+			targetProxy = C450CE9C1FCB820D0030ED74 /* PBXContainerItemProxy */;
+		};
+		C450CEA81FCB820D0030ED74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C450CE851FCB820D0030ED74 /* LogBook */;
+			targetProxy = C450CEA71FCB820D0030ED74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C450CE921FCB820D0030ED74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C450CE931FCB820D0030ED74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C450CEAD1FCB820D0030ED74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C450CEAE1FCB820D0030ED74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		C450CEB01FCB820D0030ED74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LogBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barnes.LogBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C450CEB11FCB820D0030ED74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LogBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barnes.LogBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		C450CEB31FCB820D0030ED74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LogBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barnes.LogBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogBook.app/Contents/MacOS/LogBook";
+			};
+			name = Debug;
+		};
+		C450CEB41FCB820D0030ED74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LogBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barnes.LogBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogBook.app/Contents/MacOS/LogBook";
+			};
+			name = Release;
+		};
+		C450CEB61FCB820D0030ED74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LogBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barnes.LogBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = LogBook;
+			};
+			name = Debug;
+		};
+		C450CEB71FCB820D0030ED74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LogBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barnes.LogBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = LogBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C450CE811FCB820C0030ED74 /* Build configuration list for PBXProject "LogBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C450CEAD1FCB820D0030ED74 /* Debug */,
+				C450CEAE1FCB820D0030ED74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C450CEAF1FCB820D0030ED74 /* Build configuration list for PBXNativeTarget "LogBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C450CEB01FCB820D0030ED74 /* Debug */,
+				C450CEB11FCB820D0030ED74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C450CEB21FCB820D0030ED74 /* Build configuration list for PBXNativeTarget "LogBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C450CEB31FCB820D0030ED74 /* Debug */,
+				C450CEB41FCB820D0030ED74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C450CEB51FCB820D0030ED74 /* Build configuration list for PBXNativeTarget "LogBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C450CEB61FCB820D0030ED74 /* Debug */,
+				C450CEB71FCB820D0030ED74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C450CE8D1FCB820D0030ED74 /* LogBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C450CE8E1FCB820D0030ED74 /* LogBook.xcdatamodel */,
+			);
+			currentVersion = C450CE8E1FCB820D0030ED74 /* LogBook.xcdatamodel */;
+			path = LogBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C450CE7E1FCB820C0030ED74 /* Project object */;
+}
